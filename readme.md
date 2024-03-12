@@ -96,3 +96,23 @@ async function getUrl() {
 }
 getUrl()
 ```
+
+
+4. Non-blocking io
+``` javascript
+var startTime
+
+function timer() {
+    startTime = new Date().getTime()
+    console.log('timer 시작시간: ' + startTime)
+    setTimeout(function () {
+        var endTime = new Date().getTime()
+        console.log('timer 종료시간: ' + endTime)
+        console.log('걸린시간: ' + (endTime - startTime))
+        timer()
+    }, 1000)
+}
+timer()
+```
+![image](https://github.com/JinYongHwa/javascript/assets/21700482/f80dd22d-403c-43f8-9a19-1e936711b42b)
+
