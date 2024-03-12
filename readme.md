@@ -57,6 +57,8 @@ console.log("입니다")
 
 ```
 
+
+### axios 를 이용하여 외부 api 호출하기
 ``` sh
 npm install axios
 ```
@@ -72,4 +74,16 @@ axios("http://headers.jsontest.com")
 
 console.log("완료")
 
+```
+### async/await
+```
+var axios = require('axios')
+
+async function getUrl() {
+    console.log("URL 가져오기")
+    var response = await axios("http://headers.jsontest.com")
+    console.log(response.data)
+    console.log("완료")
+}
+getUrl()
 ```
