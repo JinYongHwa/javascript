@@ -1,7 +1,7 @@
 # javascript 특징
 
 
-1. 변수의 타입이 정의되지 않음
+1. 동적 타입이 가능하다
 ``` javascript
 // 변수에 어떠한 탑의 값을 넣을수있다
 var a = 1
@@ -54,5 +54,22 @@ setTimeout(function () {
     console.log("진용화")
 }, 1000)
 console.log("입니다")
+
+```
+
+``` sh
+npm install axios
+```
+
+``` javascript
+var axios = require('axios')
+
+console.log("URL 가져오기")
+axios("http://headers.jsontest.com")
+    .then(response => {
+        console.log(response.data)
+    })
+
+console.log("완료")
 
 ```
