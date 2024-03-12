@@ -67,7 +67,7 @@ npm install axios
 var axios = require('axios')
 
 console.log("URL 가져오기")
-axios("http://headers.jsontest.com")
+axios("http://ip.jsontest.com")
     .then(response => {
         console.log(response.data)
     })
@@ -81,7 +81,7 @@ var axios = require('axios')
 
 async function getUrl() {
     console.log("URL 가져오기")
-    var response = await axios("http://headers.jsontest.com")
+    var response = await axios("http://ip.jsontest.com")
     console.log(response.data)
     console.log("완료")
 }
