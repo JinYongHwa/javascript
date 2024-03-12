@@ -3,7 +3,7 @@
 
 1. 동적 타입이 가능하다
 ``` javascript
-// 변수에 어떠한 탑의 값을 넣을수있다
+// 변수에 어떠한 타입의 값을 넣을수있다
 var a = 1
 console.log(a)
 
@@ -15,7 +15,11 @@ a = function () {
     console.log('이것은 변수에 할당된 함수')
 }
 
-a() 
+a()
+
+//함수를 다른 변수에 할당 할 수도 있다
+var b = a
+b()
 ```
 2. 자유로운 Object,Array 형태
 ``` javascript
