@@ -37,9 +37,11 @@ function test() {
     console.log("이것은 test함수")
 }
 
-arr.push(test)
-arr.push(person)
+arr.push(test)    //배열에 함수를 담을수있음
+arr.push(person)    //하나의 배열에 다른 타입의 데이터를 담을수있음
 
+
+console.log(arr)
 arr[0]()
 console.log(arr[1])
 ```
