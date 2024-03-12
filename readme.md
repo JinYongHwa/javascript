@@ -21,6 +21,11 @@ a()
 var b = a
 b()
 ```
+
+
+
+
+
 2. 자유로운 Object,Array 형태
 ``` javascript
 var person = {
